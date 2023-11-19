@@ -16,21 +16,23 @@
   <meta name="author" content="zyq">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Vue技巧属性传值 涉及很多属性的传值时：设计对象并使用v-bind。 1234567const post &#x3D; &#123;  id: 1,  title: &#x27;My Journey with Vue&#x27;&#125;&lt;BlogPost v-bind&#x3D;&quot;post&quot; &#x2F;&gt;&#x2F;&#x2F;等价于&lt;BlogPost :id&#x3D;&quot;post.id&quot;">
+    <meta name="description" content="Vue基础属性传值 涉及很多属性的传值时：设计对象并使用v-bind。 1234567const post &#x3D; &#123;  id: 1,  title: &#x27;My Journey with Vue&#x27;&#125;&lt;BlogPost v-bind&#x3D;&quot;post&quot; &#x2F;&gt;&#x2F;&#x2F;等价于&lt;BlogPost :id&#x3D;&quot;post.id&quot;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SpringBeara">
-<meta property="og:url" content="http://example.com/2023/11/19/VueTrick/index.html">
+<meta property="og:title" content="Vue基础">
+<meta property="og:url" content="http://springbeara.top/2023/11/19/VueTrick/index.html">
 <meta property="og:site_name" content="SpringBeara">
-<meta property="og:description" content="Vue技巧属性传值 涉及很多属性的传值时：设计对象并使用v-bind。 1234567const post &#x3D; &#123;  id: 1,  title: &#x27;My Journey with Vue&#x27;&#125;&lt;BlogPost v-bind&#x3D;&quot;post&quot; &#x2F;&gt;&#x2F;&#x2F;等价于&lt;BlogPost :id&#x3D;&quot;post.id&quot;">
+<meta property="og:description" content="Vue基础属性传值 涉及很多属性的传值时：设计对象并使用v-bind。 1234567const post &#x3D; &#123;  id: 1,  title: &#x27;My Journey with Vue&#x27;&#125;&lt;BlogPost v-bind&#x3D;&quot;post&quot; &#x2F;&gt;&#x2F;&#x2F;等价于&lt;BlogPost :id&#x3D;&quot;post.id&quot;">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-11-19T02:09:17.619Z">
-<meta property="article:modified_time" content="2023-11-17T02:54:59.929Z">
+<meta property="article:published_time" content="2023-11-19T15:54:32.000Z">
+<meta property="article:modified_time" content="2023-11-19T16:52:51.135Z">
 <meta property="article:author" content="zyq">
+<meta property="article:tag" content="前端">
+<meta property="article:tag" content="vue">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>SpringBeara</title>
+  <title>Vue基础 - SpringBeara</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -68,7 +70,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.5-a","typing":{"enable":true,"typeSpeed":200,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"springbeara.top","root":"/","version":"1.9.5-a","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -196,7 +198,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text=""></span>
+            <span id="subtitle" data-typed-text="Vue基础"></span>
           
         </div>
 
@@ -207,8 +209,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-11-19 10:09" pubdate>
-          2023年11月19日 上午
+        <time datetime="2023-11-19 23:54" pubdate>
+          2023年11月19日 晚上
         </time>
       </span>
     
@@ -267,12 +269,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header"></h1>
+            <h1 id="seo-header">Vue基础</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="Vue技巧"><a href="#Vue技巧" class="headerlink" title="Vue技巧"></a>Vue技巧</h1><h2 id="属性传值"><a href="#属性传值" class="headerlink" title="属性传值"></a>属性传值</h2><ol>
+                <h1 id="Vue基础"><a href="#Vue基础" class="headerlink" title="Vue基础"></a>Vue基础</h1><h2 id="属性传值"><a href="#属性传值" class="headerlink" title="属性传值"></a>属性传值</h2><ol>
 <li><p>涉及很多属性的传值时：设计对象并使用v-bind。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs vue">const post = &#123;<br>  id: 1,<br>  title: &#x27;My Journey with Vue&#x27;<br>&#125;<br>&lt;BlogPost v-bind=&quot;post&quot; /&gt;<br>//等价于<br>&lt;BlogPost :id=&quot;post.id&quot; :title=&quot;post.title&quot; /&gt;<br></code></pre></td></tr></table></figure>
 </li>
@@ -346,6 +348,43 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%89%8D%E7%AB%AF/" class="category-chain-item">前端</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%89%8D%E7%AB%AF/vue/" class="category-chain-item">vue</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%89%8D%E7%AB%AF/" class="print-no-link">#前端</a>
+      
+        <a href="/tags/vue/" class="print-no-link">#vue</a>
+      
+    </div>
   
 </div>
 
@@ -355,8 +394,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div></div>
-      <div>http://example.com/2023/11/19/VueTrick/</div>
+      <div>Vue基础</div>
+      <div>http://springbeara.top/2023/11/19/VueTrick/</div>
     </div>
     <div class="license-meta">
       
@@ -399,6 +438,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2023/11/20/MyBatis/" title="Mybatis基础">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Mybatis基础</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
