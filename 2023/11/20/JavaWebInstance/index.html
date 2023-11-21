@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s3.bmp.ovh/imgs/2023/11/20/b18f88897cc0af29.png">
 <meta property="article:published_time" content="2023-11-20T12:34:25.213Z">
-<meta property="article:modified_time" content="2023-11-20T12:36:50.300Z">
+<meta property="article:modified_time" content="2023-11-20T15:53:31.799Z">
 <meta property="article:author" content="zyq">
 <meta property="article:tag" content="后端">
 <meta property="article:tag" content="SpringBoot">
@@ -236,7 +236,7 @@
         
         
         
-          195 分钟
+          194 分钟
         
       </span>
     
@@ -308,7 +308,7 @@
 </blockquote>
 <p>具体分析：</p>
 <ol>
-<li>为了完成员工和部门的增删查改。&#x3D;&#x3D;动态SQL&#x3D;&#x3D;是必须的，因此在上述代码框架中还要增加相应的XML文件完成动态SQL。员工的属性有头像，因此涉及到&#x3D;&#x3D;文件的上传&#x3D;&#x3D;，可以考虑用本地存储或阿里云OSS，若为阿里云OSS还必须创建aliOSSUtil类，两种方法都要创建一个uploadController来完成上传文件的控制。&#x3D;&#x3D;分页查询&#x3D;&#x3D;也是必要的，因此需要创建一个PageBean类存储返回的数据和数据条目数。</li>
+<li>为了完成员工和部门的增删查改。<strong>动态SQL</strong>是必须的，因此在上述代码框架中还要增加相应的XML文件完成动态SQL。员工的属性有头像，因此涉及到<strong>文件的上传</strong>，可以考虑用本地存储或阿里云OSS，若为阿里云OSS还必须创建aliOSSUtil类，两种方法都要创建一个uploadController来完成上传文件的控制。<strong>分页查询</strong>也是必要的，因此需要创建一个PageBean类存储返回的数据和数据条目数。</li>
 <li>为了完成登录校验，可以利用JWT和拦截器，因此需要一个jwt的工具类专门来生成和转换jwt，需要一个登录拦截器类和拦截器的注册类，而登录操作也可以创建一个loginController。为了完成异常处理，定义一个全局异常处理类。</li>
 <li>为了完成上述功能，除了定义额外的类，还需要必要的依赖和配置文件。而这些都是在具体的开发过程中慢慢完善的。在本阶段先分析到这一步。</li>
 </ol>
@@ -749,6 +749,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2023/11/21/Backtrace/" title="回溯基础">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">回溯基础</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
