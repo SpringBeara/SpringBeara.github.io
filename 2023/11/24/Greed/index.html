@@ -18,13 +18,13 @@
   
     <meta name="description" content="Greedy Algorithm 怎么贪才不会翻车？也是一种艺术。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="贪心基础">
+<meta property="og:title" content="Greedy Algorithm">
 <meta property="og:url" content="http://springbeara.top/2023/11/24/Greed/index.html">
 <meta property="og:site_name" content="SpringBeara">
 <meta property="og:description" content="Greedy Algorithm 怎么贪才不会翻车？也是一种艺术。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-11-23T16:23:09.872Z">
-<meta property="article:modified_time" content="2023-11-23T16:22:41.562Z">
+<meta property="article:published_time" content="2023-11-24T08:49:22.497Z">
+<meta property="article:modified_time" content="2023-11-24T08:50:17.029Z">
 <meta property="article:author" content="zyq">
 <meta property="article:tag" content="算法基础">
 <meta property="article:tag" content="贪心">
@@ -33,7 +33,7 @@
   
   
   
-  <title>贪心基础 - SpringBeara</title>
+  <title>Greedy Algorithm - SpringBeara</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -199,7 +199,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="贪心基础"></span>
+            <span id="subtitle" data-typed-text="Greedy Algorithm"></span>
           
         </div>
 
@@ -210,8 +210,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-11-24 00:23" pubdate>
-          2023年11月24日 凌晨
+        <time datetime="2023-11-24 16:49" pubdate>
+          2023年11月24日 下午
         </time>
       </span>
     
@@ -222,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          12k 字
+          14k 字
         
       </span>
     
@@ -233,7 +233,7 @@
         
         
         
-          97 分钟
+          113 分钟
         
       </span>
     
@@ -270,7 +270,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">贪心基础</h1>
+            <h1 id="seo-header">Greedy Algorithm</h1>
             
             
               <div class="markdown-body">
@@ -329,8 +329,38 @@
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;map&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;queue&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-type">int</span> n;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> MAX = <span class="hljs-number">100000</span>;<br><span class="hljs-comment">//四大模块：初始化数据；建树和输出树；建编码并输出编码；计算wpl；</span><br><span class="hljs-comment">//准备条件：初始化一组编码和他对应的频率（权值）。</span><br><span class="hljs-comment">//1.构造huffman树：首先将初始化的编码全部入队（0~n），然后从（n~2*n-1）依次构造出整个树，</span><br><span class="hljs-comment">// 此循环中每次出队（因为以后在构造其他节点时不再考虑）两个最小weight的节点，并利用他们构造出新节点，最为他们的父亲节点</span><br><span class="hljs-comment">// 2.通过huffman树构造编码：每个字符有其对应的编码，因此用map存放对应关系，</span><br><span class="hljs-comment">// 从huffman树的叶子开始依次寻到（until）根节点，每次作为左子节点则将编码连接1，否则连接0...每处理一个就建立mapping</span><br><br><span class="hljs-keyword">struct</span> <span class="hljs-title class_">TreeNode</span><br>&#123;<br>	<span class="hljs-type">char</span> aChar;		<span class="hljs-comment">//字符</span><br>	<span class="hljs-type">int</span> weight;		<span class="hljs-comment">//权值：频率</span><br>	<span class="hljs-type">int</span> parent;<br>	<span class="hljs-type">int</span> lChild;<br>	<span class="hljs-type">int</span> rChild;<br>&#125;;<br><br>TreeNode nodes[MAX];<br>map&lt;<span class="hljs-type">char</span>, string&gt; huffmanCode;<br><br><span class="hljs-keyword">struct</span> <span class="hljs-title class_">NodeType</span>		<span class="hljs-comment">//优先队列结点类型</span><br>&#123;<br>	<span class="hljs-type">int</span> no;				<span class="hljs-comment">//对应哈夫曼树ht中的位置</span><br>	<span class="hljs-type">char</span> aChar;			<span class="hljs-comment">//字符</span><br>	<span class="hljs-type">int</span>  weight;		<span class="hljs-comment">//权值</span><br>	<span class="hljs-type">bool</span> <span class="hljs-keyword">operator</span>&lt;(<span class="hljs-type">const</span> NodeType&amp; s) <span class="hljs-type">const</span><br>	&#123;					<span class="hljs-comment">//用于创建大根堆</span><br>		<span class="hljs-keyword">return</span> s.weight &lt; weight;	<span class="hljs-comment">//weight越小越优先。</span><br>	&#125;<br>&#125;;<br><span class="hljs-comment">//构造哈夫曼树</span><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">CreateHTree</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>	NodeType e, e1, e2;<span class="hljs-comment">//由最小weight的e1 e2 构造e </span><br>	priority_queue&lt;NodeType&gt; qu;<br>	<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> k = <span class="hljs-number">0</span>; k &lt; <span class="hljs-number">2</span> * n - <span class="hljs-number">1</span>; k++)	<span class="hljs-comment">//设置所有结点的指针域</span><br>		nodes[k].lChild = nodes[k].rChild = nodes[k].parent = <span class="hljs-number">-1</span>;<br>	<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)				<span class="hljs-comment">//将n个结点进队qu</span><br>	&#123;<br>		e.no = i;<br>		e.aChar = nodes[i].aChar;<br>		e.weight = nodes[i].weight;<br>		qu.<span class="hljs-built_in">push</span>(e);<br>	&#125;<br>	<span class="hljs-comment">//关于此处的n 2*n-1 数据结构上有推导</span><br>	<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = n; j &lt; <span class="hljs-number">2</span> * n - <span class="hljs-number">1</span>; j++)			<span class="hljs-comment">//构造哈夫曼树的n-1个非叶结点</span><br>	&#123;<br>		e1 = qu.<span class="hljs-built_in">top</span>();  qu.<span class="hljs-built_in">pop</span>();		<span class="hljs-comment">//出队权值最小的结点e1</span><br>		e2 = qu.<span class="hljs-built_in">top</span>();  qu.<span class="hljs-built_in">pop</span>();		<span class="hljs-comment">//出队权值次小的结点e2</span><br>		nodes[j].weight = e1.weight + e2.weight; <span class="hljs-comment">//构造哈夫曼树的非叶结点j	</span><br>		nodes[j].lChild = e1.no;<br>		nodes[j].rChild = e2.no;<br>		nodes[e1.no].parent = j;			<span class="hljs-comment">//修改e1.no的双亲为结点j</span><br>		nodes[e2.no].parent = j;			<span class="hljs-comment">//修改e2.no的双亲为结点j</span><br>		e.no = j;						<span class="hljs-comment">//构造队列结点e</span><br>		e.weight = e1.weight + e2.weight;<br>		qu.<span class="hljs-built_in">push</span>(e);<br>	&#125;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">CreateHCode</span><span class="hljs-params">()</span>			<span class="hljs-comment">//构造哈夫曼编码</span></span><br><span class="hljs-function"></span>&#123;<br>	string code;<br>	<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)	<span class="hljs-comment">//构造叶结点i的哈夫曼编码</span><br>	&#123;<br>		code = <span class="hljs-string">&quot;&quot;</span>;<br>		<span class="hljs-type">int</span> nowNo = i;<br>		<span class="hljs-type">int</span> f = nodes[nowNo].parent;<br>		<span class="hljs-keyword">while</span> (f != <span class="hljs-number">-1</span>)				<span class="hljs-comment">//循环到根结点</span><br>		&#123;<br>			<span class="hljs-keyword">if</span> (nodes[f].lChild == nowNo)	<span class="hljs-comment">//当前节点作为父节点的左孩子</span><br>				code = <span class="hljs-string">&#x27;0&#x27;</span> + code;<br>			<span class="hljs-keyword">else</span>					<span class="hljs-comment">//当前节点作为父节点的右孩子</span><br>				code = <span class="hljs-string">&#x27;1&#x27;</span> + code;<br>			nowNo = f; f = nodes[nowNo].parent;<br>		&#125;<br>		huffmanCode[nodes[i].aChar] = code;	<br>	&#125;<br>&#125;<br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">DispHCode</span><span class="hljs-params">()</span>					<span class="hljs-comment">//输出哈夫曼编码</span></span><br><span class="hljs-function"></span>&#123;<br>	map&lt;<span class="hljs-type">char</span>, string&gt;::iterator it;<br>	<span class="hljs-keyword">for</span> (it = huffmanCode.<span class="hljs-built_in">begin</span>(); it != huffmanCode.<span class="hljs-built_in">end</span>(); ++it)<br>		cout &lt;&lt; <span class="hljs-string">&quot;    &quot;</span> &lt;&lt; it-&gt;first &lt;&lt; <span class="hljs-string">&quot;: &quot;</span> &lt;&lt; it-&gt;second &lt;&lt; endl;<br>&#125;<br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">DispHTree</span><span class="hljs-params">()</span>					<span class="hljs-comment">//输出哈夫曼树</span></span><br><span class="hljs-function"></span>&#123;<br>	<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">2</span> * n - <span class="hljs-number">1</span>; i++)<br>	&#123;<br>		<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;    data=%c, weight=%d, lchild=%d, rchild=%d, parent=%d\n&quot;</span>,<br>			nodes[i].aChar, nodes[i].weight, nodes[i].lChild, nodes[i].rChild, nodes[i].parent);<br>	&#125;<br>&#125;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">WPL</span><span class="hljs-params">()</span>				<span class="hljs-comment">//求WPL</span></span><br><span class="hljs-function"></span>&#123;<br>	<span class="hljs-type">int</span> wpl = <span class="hljs-number">0</span>;<br>	<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)<br>		wpl += nodes[i].weight * huffmanCode[nodes[i].aChar].<span class="hljs-built_in">size</span>();<br>	<span class="hljs-keyword">return</span> wpl;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>	n = <span class="hljs-number">5</span>;<br>	nodes[<span class="hljs-number">0</span>].aChar = <span class="hljs-string">&#x27;a&#x27;</span>; nodes[<span class="hljs-number">0</span>].weight = <span class="hljs-number">4</span>;		<span class="hljs-comment">//置初值即n个叶子结点</span><br>	nodes[<span class="hljs-number">1</span>].aChar = <span class="hljs-string">&#x27;b&#x27;</span>; nodes[<span class="hljs-number">1</span>].weight = <span class="hljs-number">2</span>;<br>	nodes[<span class="hljs-number">2</span>].aChar = <span class="hljs-string">&#x27;c&#x27;</span>; nodes[<span class="hljs-number">2</span>].weight = <span class="hljs-number">1</span>;<br>	nodes[<span class="hljs-number">3</span>].aChar = <span class="hljs-string">&#x27;d&#x27;</span>; nodes[<span class="hljs-number">3</span>].weight = <span class="hljs-number">7</span>;<br>	nodes[<span class="hljs-number">4</span>].aChar = <span class="hljs-string">&#x27;e&#x27;</span>; nodes[<span class="hljs-number">4</span>].weight = <span class="hljs-number">3</span>;<br>	<span class="hljs-built_in">CreateHTree</span>();					<span class="hljs-comment">//建立哈夫曼树</span><br>	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;构造的哈夫曼树:\n&quot;</span>);<br>	<span class="hljs-built_in">DispHTree</span>();<br>	<span class="hljs-built_in">CreateHCode</span>();					<span class="hljs-comment">//求哈夫曼编码</span><br>	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;产生的哈夫曼编码如下:\n&quot;</span>);<br>	<span class="hljs-built_in">DispHCode</span>();					<span class="hljs-comment">//输出哈夫曼编码</span><br>	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;WPL=%d\n&quot;</span>, <span class="hljs-built_in">WPL</span>());<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <h2 id="流水线作业调度"><a href="#流水线作业调度" class="headerlink" title="流水线作业调度"></a>流水线作业调度</h2><blockquote>
-<p>johnson to be continued…</p>
+<p>一批作业，他们都需要先在机器A上执行，然后再到B上执行，不同作业在不同机器上执行时间不同。该如何贪心呢？假设只有两个作业JobA JobB 他们在AB上的执行时间分别是(a1,b1)和(a2,b2)</p>
+<ol>
+<li><p>作业A先执行</p>
+</li>
+<li><p>作业B不必等待&#x3D;&gt;总时间为a1+a2+b1+b2-b1&#x3D;&gt;不等待是因为a2&gt;b1</p>
+</li>
+<li><p>作业B需要等待&#x3D;&gt;总时间为a1+a2+b1+b2-a2&#x3D;&gt;等待是因为a2&lt;b1</p>
+</li>
+</ol>
+<p>  因此：A先执行的最短时间：a1+a2+b1+b2-min(b1,a2)</p>
+<ol start="2">
+<li><p>作业B先执行</p>
+</li>
+<li><p>作业A不必等待&#x3D;&gt;总时间为a1+a2+b1+b2-b2&#x3D;&gt;不等待是因为a1&gt;b2</p>
+</li>
+<li><p>作业A需要等待&#x3D;&gt;总时间为a1+a2+b1+b2-a1&#x3D;&gt;等待是因为a1&lt;b2</p>
+</li>
+</ol>
+<p>  因此：B先执行的最短时间：a1+a2+b1+b2-min(b2,a1)</p>
+<p>综上：最短时间为：a1+a2+b1+b2+max( min(b1,a2) , min(b2,a1) ).根据此思路推导出贪心策略：</p>
+<p>1.若a&gt;b 则让b较大的先执行</p>
+<p>2.若a&lt;&#x3D;b 则让a较小的先执行</p>
+<p>Johnson算法：</p>
+<p>1.将所有作业按照a时间和b时间的大小关系分为两组，一组的作业a&lt;&#x3D;b，记为G1， 另一组作业a&gt;b，记为G2；</p>
+<p>2.G1按a升序排序（最先执行最小a的作业），G2按b降序排序（最先执行最大b的作业）;</p>
+<p>3.先执行完毕所有G1组，再执行完所有G2组。</p>
+<p>（2.确定组内顺序，3.确定组间顺序，确定顺序后直接执行就能得到最佳调度方案）</p>
 </blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;algorithm&gt;</span> </span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-meta">#<span class="hljs-keyword">define</span> max(x,y) ((x)&gt;(y)?(x):(y))</span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> N 100</span><br><span class="hljs-comment">//问题表示</span><br><span class="hljs-type">int</span> n=<span class="hljs-number">4</span>;<br><span class="hljs-type">int</span> a[N]=&#123;<span class="hljs-number">5</span>,<span class="hljs-number">12</span>,<span class="hljs-number">4</span>,<span class="hljs-number">8</span>&#125;;				<span class="hljs-comment">//对应M1的时间</span><br><span class="hljs-type">int</span> b[N]=&#123;<span class="hljs-number">6</span>,<span class="hljs-number">2</span>,<span class="hljs-number">14</span>,<span class="hljs-number">7</span>&#125;;				<span class="hljs-comment">//对应M2的时间</span><br><span class="hljs-keyword">struct</span> <span class="hljs-title class_">NodeType</span><br>&#123;<br>	<span class="hljs-type">int</span> no;							<span class="hljs-comment">//作业序号</span><br>    <span class="hljs-type">bool</span> group;						<span class="hljs-comment">//1代表第一组G1,0代表第二组G2</span><br>    <span class="hljs-type">int</span> time;						<span class="hljs-comment">//a,b的最小时间</span><br>	<span class="hljs-type">bool</span> <span class="hljs-keyword">operator</span>&lt;(<span class="hljs-type">const</span> NodeType &amp;s) <span class="hljs-type">const</span><br>	&#123;<br>		<span class="hljs-keyword">return</span> time&lt;s.time;			<span class="hljs-comment">//按time递增排序</span><br>	&#125;<br>&#125;;<br><span class="hljs-comment">//求解结果表示</span><br><span class="hljs-type">int</span> best[N];							<span class="hljs-comment">//最优调度序列</span><br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">solve</span><span class="hljs-params">()</span>								<span class="hljs-comment">//求解流水作业调度问题</span></span><br><span class="hljs-function"></span>&#123;<br>	<span class="hljs-type">int</span> i,j,k;<br>	NodeType c[N];<br>	<span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;n;i++)					<span class="hljs-comment">//n个作业中,求出每个作业的最小加工时间 </span><br>	&#123;<br>		c[i].no=i;<br>		c[i].group=(a[i]&lt;=b[i]);		<span class="hljs-comment">//a[i]&lt;=b[i]对应第1组G1,a[i]&gt;b[i]对应第0组G2</span><br>		c[i].time=a[i]&lt;=b[i]?a[i]:b[i];	<span class="hljs-comment">//第1组存放a[i],第0组存放b[i]</span><br>	&#125;<br>	<span class="hljs-built_in">sort</span>(c,c+n);						<span class="hljs-comment">//c元素按time递增排序</span><br>	j=<span class="hljs-number">0</span>; k=n<span class="hljs-number">-1</span>;<br>	<span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;n;i++)					<span class="hljs-comment">//扫描c所有元素,产生最优调度方案</span><br>	&#123;<br>		<span class="hljs-keyword">if</span>(c[i].group==<span class="hljs-number">1</span>)				<span class="hljs-comment">//第1组,按time递增排列放在best的前面部分</span><br>			best[j++]=c[i].no;<br>		<span class="hljs-keyword">else</span>							<span class="hljs-comment">//第0组,按time递减排列放到best的后面部分</span><br>			best[k--]=c[i].no;<br>	&#125;<br>	<span class="hljs-type">int</span> f1=<span class="hljs-number">0</span>;							<span class="hljs-comment">//累计M1上的执行时间</span><br>	<span class="hljs-type">int</span> f2=<span class="hljs-number">0</span>;							<span class="hljs-comment">//最优调度下的消耗总时间</span><br>	<span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;n;i++)<br>	&#123;<br>		f1+=a[best[i]];<br>		f2=<span class="hljs-built_in">max</span>(f2,f1)+b[best[i]];<br>    &#125;<br>	<span class="hljs-keyword">return</span> f2;<br>&#125;<br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;求解结果\n&quot;</span>);<br>	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;    总时间: %d\n&quot;</span>,<span class="hljs-built_in">solve</span>());	<span class="hljs-comment">//输出:33</span><br>	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;    调度方案: &quot;</span>);<br>	<span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;n;i++)<br>		<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d &quot;</span>,best[i]+<span class="hljs-number">1</span>);		<span class="hljs-comment">//输出:3 1 4 2</span><br>	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;\n&quot;</span>);<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+
 
                 
               </div>
@@ -387,7 +417,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>贪心基础</div>
+      <div>Greedy Algorithm</div>
       <div>http://springbeara.top/2023/11/24/Greed/</div>
     </div>
     <div class="license-meta">
@@ -436,8 +466,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/11/22/Backtrace/" title="回溯基础">
-                        <span class="hidden-mobile">回溯基础</span>
+                      <a href="/2023/11/24/Divide&amp;Conquer/" title="Divide&amp;Conquer">
+                        <span class="hidden-mobile">Divide&amp;Conquer</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
